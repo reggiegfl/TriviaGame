@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vegas Trivia Night!</title>
+
+    <link rel="stylesheet" href="assets\css\style.css">
+    
+</head>
+<body>
+    <div style="font-weight: bold">Time Left: <span id="timeLeft"></span></div>
+    
+    <div class="grid">
+        
+        <h1>Welcome To Las Vegas Trivia!</h1>
+        <div id="welcome">
+            <h2>CLick the start button!</h2>
+            <button id="start">Start!</button>
+        </div>
+
+        <form id="quiz" name="quiz">
+
+            <p>Las Vegas is the spanish term for what?<br>
+                <input type="radio" id="mc" name="question1" value="The Gardens">The Gardens
+                <input type="radio" id="mc" name="question1" value="The Meadows">The Meadows
+                <input type="radio" id="mc" name="question1" value="The Oasis">The Oasis
+                <input type="radio" id="mc" name="question1" value="The Dunes">The Dunes
+            </p>
+            <p>The Mirage opened in what year?<br>
+                <input type="radio" id="mc" name="question2" value="1989">1989
+                <input type="radio" id="mc" name="question2" value="1987">1987
+                <input type="radio" id="mc" name="question2" value="1990">1990
+                <input type="radio" id="mc" name="question2" value="1991">1991
+            </p>
+            <p>Which of these casinos is not owned by MGM Resorsts?<br>
+                <input type="radio" id="mc" name="question3" value="The Mirage">The Mirage
+                <input type="radio" id="mc" name="question3" value="Bellagio">Bellagio
+                <input type="radio" id="mc" name="question3" value="Aria">Aria
+                <input type="radio" id="mc" name="question3" value="The Venetian">The Venetian
+            </p>
+            <p>What famous gangster opened the Flamingo?<br>
+                <input type="radio" id="mc" name="question4" value="Meyer Lasnky">Meyer Lasnky
+                <input type="radio" id="mc" name="question4" value="Benjamin Siegel">Benjamin Siegel
+                <input type="radio" id="mc" name="question4" value="Charlie Luciano">Charlie Luciano
+                <input type="radio" id="mc" name="question4" value="Moe Dalitz">Moe Dalitz
+            </p>
+            <p>What mob attorney later became mayor of Las Vegas?<br>
+                <input type="radio" id="mc" name="question5" value="Jay Sarno">Jay Sarno
+                <input type="radio" id="mc" name="question5" value="Tony Accardo">Tony Accardo
+                <input type="radio" id="mc" name="question5" value="Sam Rosenthal">Sam Rosenthal
+                <input type="radio" id="mc" name="question5" value="Oscar Goodman">Oscar Goodman
+            </p>
+            <input id="button" type="button" value="Check my score!" onclick="score();">
+        </form>
+    
+    </div>
+
+    <div id="after_submit">
+        <p id="number_correct"></p>
+    </div>        
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets\javascript\app.js"></script>
+</body>
+</html>
