@@ -10,7 +10,6 @@
     
 </head>
 <body>
-    <div style="font-weight: bold">Time Left: <span id="timeLeft"></span></div>
     
     <div class="grid">
         
@@ -19,6 +18,7 @@
             <h2>CLick the start button!</h2>
             <button id="start">Start!</button>
         </div>
+        <div style="font-weight: bold">Time Left: <span id="timeLeft"></span></div>
 
         <form id="quiz" name="quiz">
 
@@ -54,12 +54,12 @@
             </p>
             <input id="button" type="button" value="Check my score!" onclick="score();">
         </form>
+        <div id="after_submit">
+            <p id="number_correct"></p>
+        </div>        
     
     </div>
 
-    <div id="after_submit">
-        <p id="number_correct"></p>
-    </div>        
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

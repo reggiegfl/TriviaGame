@@ -33,30 +33,14 @@ function decrement() {
     alert("Time Up!");
   }
 }
-
 //  The stop function
 function stop() {
-
   //  Clears our intervalId
   //  We just pass the name of the interval
   //  to the clearInterval function.
   clearInterval(intervalId);
   score();
 }
-
-
-
-//function countdown(){
-    //$("#number_correct").html("You got " + correct + " correct")
-    //document.getElementById("timeleft").innerhtml= "You got " + correct + " correct";    
-      //  if (number <=0){
-        //    document(correct)
-        //}
-
-
-
-
-
 function score(){
     q1 = document.quiz.question1.value;
     q2 = document.quiz.question2.value;
@@ -81,8 +65,8 @@ function score(){
         correct++;
     }
 console.log(q1, q2, q3, q4, q5, correct);
-$("#number_correct").html("You got " + correct + " correct")
-//document.getElementById("number_correct").innerHTML = "You got " + correct + " correct";
+//$("#number_correct").html("You got " + correct + " correct")
+document.getElementById("number_correct").innerHTML = "You got " + correct + " correct";
 }
 $("#start").on("click", function(){
     run();
